@@ -11,7 +11,7 @@ class Text_Widget extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.white,
         child: Icon(Ionicons.logo_github,size: displayWidth(context)*0.1,),
-        onPressed: () => redirectToCode(''),
+        onPressed: () => redirectToCode('https://github.com/Alpha17-2/flutter_widgets/blob/master/lib/Widgets/Text_Widget.dart'),
       ),
 
       appBar: AppBar(
