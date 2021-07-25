@@ -1,15 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widgets/Model/widgetDetail.dart';
+import 'package:flutter_widgets/Widgets/Container_Widget.dart';
 import 'package:flutter_widgets/Widgets/Text_Widget.dart';
 import 'package:flutter_widgets/helper/DeviceSize.dart';
 
 class homeScreen extends StatelessWidget {
+
   final List<dynamic> widgetList = [
     Text_Widget(),
+    Container_Widget(),
   ];
   final List<widgetDetail> widgetDetailList = [
     widgetDetail(
         title: 'Text', subtitle: 'Used to display texts on the device.'),
+    widgetDetail(
+      title: 'Container',
+      subtitle: 'A convenience widget that combines common painting, positioning, and sizing widgets.'
+    ),
   ];
   @override
   Widget build(BuildContext context) {
@@ -23,7 +30,7 @@ class homeScreen extends StatelessWidget {
         color: Colors.white,
         child: ListView.builder(
           addRepaintBoundaries: true,
-          padding: EdgeInsets.all(8.0),
+          padding: EdgeInsets.all(4.0),
           itemBuilder: (context, index) {
             return ListTile(
               shape: RoundedRectangleBorder(
