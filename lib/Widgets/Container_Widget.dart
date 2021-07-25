@@ -15,7 +15,7 @@ class Container_Widget extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.white,
         child: Icon(Ionicons.logo_github,size: displayWidth(context)*0.1,),
-        onPressed: () => redirectToCode('https://github.com/Alpha17-2/flutter_widgets/blob/master/lib/Widgets/Text_Widget.dart'),
+        onPressed: () => redirectToCode('https://github.com/Alpha17-2/flutter_widgets/blob/master/lib/Widgets/Container_Widget.dart'),
       ),
 
       appBar: AppBar(
