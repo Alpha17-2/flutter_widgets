@@ -3,20 +3,25 @@ import 'package:flutter_widgets/Model/widgetDetail.dart';
 import 'package:flutter_widgets/Widgets/Container_Widget.dart';
 import 'package:flutter_widgets/Widgets/Text_Widget.dart';
 import 'package:flutter_widgets/helper/DeviceSize.dart';
+import '../Widgets/Stack_Widget.dart';
 
 class homeScreen extends StatelessWidget {
-
   final List<dynamic> widgetList = [
     Text_Widget(),
     Container_Widget(),
+    Stack_Widget(),
   ];
   final List<widgetDetail> widgetDetailList = [
     widgetDetail(
         title: 'Text', subtitle: 'Used to display texts on the device.'),
     widgetDetail(
-      title: 'Container',
-      subtitle: 'A convenience widget that combines common painting, positioning, and sizing widgets.'
-    ),
+        title: 'Container',
+        subtitle:
+            'A convenience widget that combines common painting, positioning, and sizing widgets.'),
+    widgetDetail(
+        title: 'Stack',
+        subtitle:
+            'A widget that positions it\'s children related to the edges of it\'s box.'),
   ];
   @override
   Widget build(BuildContext context) {
@@ -35,10 +40,10 @@ class homeScreen extends StatelessWidget {
             return ListTile(
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(15),
-
               ),
               onTap: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>widgetList[index]));
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => widgetList[index]));
               },
               isThreeLine: true,
               title: Text(
