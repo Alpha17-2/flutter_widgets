@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widgets/Model/widgetDetail.dart';
 import 'package:flutter_widgets/Widgets/Container_Widget.dart';
+import 'package:flutter_widgets/Widgets/GestureDetector_Widget.dart';
 import 'package:flutter_widgets/Widgets/Text_Widget.dart';
 import 'package:flutter_widgets/helper/DeviceSize.dart';
 import '../Widgets/Stack_Widget.dart';
@@ -10,6 +11,7 @@ class homeScreen extends StatelessWidget {
     Text_Widget(),
     Container_Widget(),
     Stack_Widget(),
+    GestureDetector_Widget(),
   ];
   final List<widgetDetail> widgetDetailList = [
     widgetDetail(
@@ -22,11 +24,16 @@ class homeScreen extends StatelessWidget {
         title: 'Stack',
         subtitle:
             'A widget that positions it\'s children related to the edges of it\'s box.'),
+    widgetDetail(
+      title: 'GestureDetector',
+      subtitle: 'A widget that detects gestures.',
+    ),
   ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.black87,
         title: Text('Common Flutter Widgets'),
       ),
       body: Container(

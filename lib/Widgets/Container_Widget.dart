@@ -19,6 +19,7 @@ class Container_Widget extends StatelessWidget {
       ),
 
       appBar: AppBar(
+        backgroundColor: Colors.black87,
         title: Text('Container Widget'),
       ),
       body: Container(

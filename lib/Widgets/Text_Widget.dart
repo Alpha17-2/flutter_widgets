@@ -15,6 +15,7 @@ class Text_Widget extends StatelessWidget {
       ),
 
       appBar: AppBar(
+        backgroundColor: Colors.black87,
         title: Text('Text Widget'),
       ),
       body: Container(
