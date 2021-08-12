@@ -17,15 +17,19 @@ class homeScreen extends StatelessWidget {
   ];
   final List<widgetDetail> widgetDetailList = [
     widgetDetail(
-        title: 'Text', subtitle: 'Used to display texts on the device.'),
+      title: 'Text',
+      subtitle: 'Used to display texts on the device.',
+    ),
     widgetDetail(
-        title: 'Container',
-        subtitle:
-            'A convenience widget that combines common painting, positioning, and sizing widgets.'),
+      title: 'Container',
+      subtitle:
+          'A convenience widget that combines common painting, positioning, and sizing widgets.',
+    ),
     widgetDetail(
-        title: 'Stack',
-        subtitle:
-            'A widget that positions it\'s children related to the edges of it\'s box.'),
+      title: 'Stack',
+      subtitle:
+          'A widget that positions it\'s children related to the edges of it\'s box.',
+    ),
     widgetDetail(
       title: 'GestureDetector',
       subtitle: 'A widget that detects gestures.',
