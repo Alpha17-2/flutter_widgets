@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_widgets/Model/widgetDetail.dart';
-import 'package:flutter_widgets/Widgets/Container_Widget.dart';
-import 'package:flutter_widgets/Widgets/GestureDetector_Widget.dart';
-import 'package:flutter_widgets/Widgets/Text_Widget.dart';
-import 'package:flutter_widgets/helper/DeviceSize.dart';
+import '../Model/widgetDetail.dart';
+import '../Widgets/Container_Widget.dart';
+import '../Widgets/GestureDetector_Widget.dart';
+import '../Widgets/Text_Widget.dart';
+import '../helper/DeviceSize.dart';
 import '../Widgets/Stack_Widget.dart';
+import '../Widgets/Image_Widget.dart';
 
 class homeScreen extends StatelessWidget {
   final List<dynamic> widgetList = [
@@ -12,6 +13,7 @@ class homeScreen extends StatelessWidget {
     Container_Widget(),
     Stack_Widget(),
     GestureDetector_Widget(),
+    Image_Widget(),
   ];
   final List<widgetDetail> widgetDetailList = [
     widgetDetail(
@@ -27,6 +29,10 @@ class homeScreen extends StatelessWidget {
     widgetDetail(
       title: 'GestureDetector',
       subtitle: 'A widget that detects gestures.',
+    ),
+    widgetDetail(
+      title: 'Image',
+      subtitle: 'A widget that displays an image.',
     ),
   ];
   @override

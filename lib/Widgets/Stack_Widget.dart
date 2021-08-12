@@ -55,14 +55,14 @@ class Stack_Widget extends StatelessWidget {
                               )),
                           child: Center(
                               child: Padding(
-                                padding: const EdgeInsets.all(2.5),
-                                child: Text(
-                            'This is how the Stack Widget Works!',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
+                            padding: const EdgeInsets.all(2.5),
+                            child: Text(
+                              'This is how the Stack Widget Works!',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
                                   fontSize: 20, fontWeight: FontWeight.bold),
-                          ),
-                              ))),
+                            ),
+                          ))),
                     ),
                   ],
                 )),
