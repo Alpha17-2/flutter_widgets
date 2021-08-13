@@ -6,7 +6,7 @@ class Image_Widget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.black,
+          backgroundColor: Colors.black87,
           title: Text('Image Widget'),
         ),
         body: Container(

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widgets/helper/helpingMethods.dart';
+import 'package:ionicons/ionicons.dart';
 import '../helper/DeviceSize.dart';
 
 class Stack_Widget extends StatelessWidget {
@@ -8,6 +10,15 @@ class Stack_Widget extends StatelessWidget {
       appBar: AppBar(
         title: Text('Stack Widget'),
         backgroundColor: Colors.black87,
+      ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.black87,
+        child: Icon(
+          Ionicons.logo_github,
+          size: displayWidth(context) * 0.1,
+        ),
+        onPressed: () => redirectToCode(
+            'https://github.com/Alpha17-2/flutter_widgets/blob/master/lib/Widgets/Stack_Widget.dart'),
       ),
       body: Container(
         height: displayHeight(context),
