@@ -30,7 +30,11 @@ Widget linebreakAnimation(context){
     );
   },itemCount: 6,
   );
+}
 
-
-
+SnackBar showMySnackbar(String message){
+  return SnackBar(
+    content: Text('${message} is successfully tapped!',
+        style: TextStyle(color: Colors.white)),
+  );
 }

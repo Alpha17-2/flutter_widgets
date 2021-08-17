@@ -3,14 +3,6 @@ import 'package:flutter_widgets/helper/DeviceSize.dart';
 import 'package:flutter_widgets/helper/helpingMethods.dart';
 
 class GestureDetector_Widget extends StatelessWidget {
-  SnackBar snackBar1 = SnackBar(
-    content: Text('\'SingleClickGesture\' is successfully tapped!',
-        style: TextStyle(color: Colors.white)),
-  );
-  SnackBar snackBar2 = SnackBar(
-    content: Text('\'LongPressGesture\' is successfully pressed!',
-        style: TextStyle(color: Colors.white)),
-  );
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +28,7 @@ class GestureDetector_Widget extends StatelessWidget {
                 children: [
                   GestureDetector(
                     onTap: () {
-                      ScaffoldMessenger.of(context).showSnackBar(snackBar1);
+                      ScaffoldMessenger.of(context).showSnackBar(showMySnackbar("'Single Click'"));
                     },
                     child: Card(
                       child: Padding(
@@ -74,7 +66,7 @@ class GestureDetector_Widget extends StatelessWidget {
                 children: [
                   GestureDetector(
                     onLongPress: () {
-                      ScaffoldMessenger.of(context).showSnackBar(snackBar2);
+                      ScaffoldMessenger.of(context).showSnackBar(showMySnackbar("'Long Press'"));
                     },
                     child: Card(
                       child: Padding(
